@@ -1,9 +1,6 @@
 import React, { useState } from "react";
 import { Form } from "react-bootstrap";
 
-type ChangeEvent = React.ChangeEvent<
-    HTMLTextAreaElement | HTMLInputElement | HTMLSelectElement
->;
 export function EditMode(): JSX.Element {
     const [editMode, setEditMode] = useState<boolean>(false);
     const [name, setName] = useState<string>("Your Name");
